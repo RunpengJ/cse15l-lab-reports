@@ -1,5 +1,5 @@
 # Lab Report 1 Week 0
-## What we done
+## What we accomplished
 - Talked about Git and Github
 - Discussed how to write files with Markdown
 - Set up Github Desktop, VS Code
