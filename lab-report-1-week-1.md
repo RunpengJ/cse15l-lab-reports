@@ -1,4 +1,4 @@
-# Lab Report 2 Week 0
+# Lab Report 1 Week 1
 
 This is a tutorial of remotely connecting to ieng6 on MacOS operating system.
 
