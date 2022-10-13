@@ -32,6 +32,8 @@ This is a tutorial of remotely connecting to ieng6 on MacOS operating system.
 ## Trying Some Commands
 
 1. After logging in to your course specfic account, try some commands in the command line window, such as "ls", "ls -a", and etc.
+    - ls Directory parameter: list the contents of each specified directory parameter; or the contents of the current directory if without parameter
+    - ls -a: list the contents (including files and directories whose names begin with a .(dot)) of the current directory.
 ![try some commands](Image/report2part3.1.png)
 
 ## Moving Files with ```scp```
@@ -72,7 +74,7 @@ This is a tutorial of remotely connecting to ieng6 on MacOS operating system.
     SHA256: // some text
     The key's randomart image is: // some picture drawn by text
     ```
-3. Create a .shh file in your ieng6 account if you don't have one.
+3. Create a .shh folder in your ieng6 account if you don't have one.
 
 4. Copy the file named id_rsa.pub from your workstation to your ieng6 account by running the command below.
     ```
