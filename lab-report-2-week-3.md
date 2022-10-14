@@ -53,14 +53,53 @@ class SearchEngine {
     }
 }
 ```
-### **Initial Page**
-Add pineapple to the list. Method handleRequest(URI url) is called. A string of "pineapple" to an arraylist which contains strings.
+
+Detects "/add". Adds pineapple to the list. **Method handleRequest(URI url)** is called. <u> A string of "pineapple" is added to an arraylist which contains strings. </u>
 ![add item1](Image/report2part1.2.png)
-Add apple to the list. Method handleRequest(URI url) is called. A string of "apple" to an arraylist which contains strings.
+
+
+Detects "/add". Add apple to the list. **Method handleRequest(URI url)** is called. <u> A string of "apple" is added to an arraylist which contains strings. </u>
 ![add item2](Image/report2part1.3.png)
-Add banana to the list. Method handleRequest(URI url) is called. A string of "banana" to an arraylist which contains strings.
+
+
+Detects "/add". Add banana to the list. **Method handleRequest(URI url)** is called. <u> A string of "banana" is added to an arraylist which contains strings.</u>
 ![add item3](Image/report2part1.4.png)
-Show items in the list that have the substring (s). Method handleRequest(URI url) is called. The code block (an else if code block) that handles "search" runs. An arraylist itemHasS is created and stores strings that contain the substring (s).
+
+
+Detects "/search". **Method handleRequest(URI url)** is called. The code block (an else if code block) that handles "search" runs. Show items that have the substring (s). <u> An arraylist itemHasS is created and stores strings that contain the substring (s). </u>
 ![search items](Image/report2part1.6.png)
 
 ## Part II
+
+### **avergeWithoutLowest(double[])**
+
+
+![average failure-inducing input](Image/report2part2.1.png)
+
+![average symptoms](Image/report2part2.2.png)
+
+![average bug](Image/report2part2.3.png)
+
+***Explanation:*** 
+- According to the comment above the function, the bug in code resides in the last for loop. In the for loop, all numbers except numbers with the lowest value are added to sum. However, this is wrong if we have more than one numbers that have the same lowest value.
+  - Expected return value: (1+2+3) / 3 = 2
+  - Actually return value: (2+3) / 3 = 1.666...6667
+- Solution
+  - Sum up all numbers first, subtract the lower value from the sum.
+  - ![average fixed](image/report2part2.3.1.png)
+
+
+### **merge(List\<String\>, List\<String\>)**
+
+
+![merge failure-inducing input](Image/report2part2.4.png)
+
+![merge symptoms](Image/report2part2.5.png)
+
+![merge bug](Image/report2part2.6.png)
+
+***Explanation***
+- The symptom means there is an infinite loop caused by the code, and memory has been used up. The reason is that in Line 50 - 53, the condition of the while loop is not updated in each interation. Therefore, once the condition is satisfied, the while loop will not end. 
+- Solution
+  - On Line 52, change index1 to index2.
+  - ![merge fixed](image/report2part2.6.1.png)
