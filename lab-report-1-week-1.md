@@ -6,7 +6,7 @@ This is a tutorial of remotely connecting to ieng6 on MacOS operating system.
 
 1. Go to *[Vscode.](https://code.visualstudio.com/)*
 
-2. Download the version that corresponds to your operating system ![VScode Download](Image/report2part1.1.png)
+2. Download the version that corresponds to your operating system ![VScode Download](Image/report1part1.1.png)
 
 ## Remotely Connecting
 
@@ -26,7 +26,7 @@ This is a tutorial of remotely connecting to ieng6 on MacOS operating system.
     ```
     
     Example⬇️:
-    ![Remotely connecting](Image/report2part2.1.png)
+    ![Remotely connecting](Image/report1part2.1.png)
 
 
 ## Trying Some Commands
@@ -34,7 +34,7 @@ This is a tutorial of remotely connecting to ieng6 on MacOS operating system.
 1. After logging in to your course specfic account, try some commands in the command line window, such as "ls", "ls -a", and etc.
     - ls Directory parameter: list the contents of each specified directory parameter; or the contents of the current directory if without parameter
     - ls -a: list the contents (including files and directories whose names begin with a .(dot)) of the current directory.
-![try some commands](Image/report2part3.1.png)
+![try some commands](Image/report1part3.1.png)
 
 ## Moving Files with ```scp```
 
@@ -47,7 +47,7 @@ This is a tutorial of remotely connecting to ieng6 on MacOS operating system.
     bensonjian@benson-mac ~ % scp path/file_name cs15lfa22jo@ieng6.ucsd.edu:path/file_copy
     ```
     Example⬇️：
-    ![Scp](Image/report2part4.1.png)
+    ![Scp](Image/report1part4.1.png)
 
 2. Use scp to copy files from ieng6
     
@@ -56,7 +56,7 @@ This is a tutorial of remotely connecting to ieng6 on MacOS operating system.
     bensonjian@benson-mac ~ % scp cs15lfa22jo@ieng6.ucsd.edu:path/file_name path/file_copy
     ```
     Example⬇️：
-    ![Scp](Image/report2part4.2.png)
+    ![Scp](Image/report1part4.2.png)
 
 ## Setting an SSH Key
 
@@ -81,12 +81,12 @@ This is a tutorial of remotely connecting to ieng6 on MacOS operating system.
     ~ % scp path/id_rsa.pub cs15lfa22@ieng6.ucsd.edu:~/.ssh/authorized_keys
     ```
 5. ⬇️You made it successfully if it doesn't prompt you to enter your password when you try to log in.
-![SSH key](Image/report2part5.1.png)
+![SSH key](Image/report1part5.1.png)
 
 ## Optimizing Remote Running
 
  After completing all steps above, you can run command on the server directly from your workstation, by adding commands inside the quote("") then appending them to the end of the ssh command.
 
  In the example below⬇️, we basically log in the remote server, run ls, and exit the remote server：
- ![Remote Running](Image/report2part6.1.png)
+ ![Remote Running](Image/report1part6.1.png)
  
