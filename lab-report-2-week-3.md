@@ -86,7 +86,7 @@ Detects "/search". **Method handleRequest(URI url)** is called. The code block (
   - Actually return value: (2+3) / 3 = 1.666...6667
 - Solution
   - Sum up all numbers first, subtract the lower value from the sum.
-  - ![average fixed](image/report2part2.3.1.png)
+  - ![average fixed](Image/report2part2.3.1.png)
 
 
 ### **merge(List\<String\>, List\<String\>)**
@@ -102,4 +102,4 @@ Detects "/search". **Method handleRequest(URI url)** is called. The code block (
 - The symptom means there is an infinite loop caused by the code, and memory has been used up. The reason is that in Line 50 - 53, the condition of the while loop is not updated in each interation. Therefore, once the condition is satisfied, the while loop will not end. 
 - Solution
   - On Line 52, change index1 to index2.
-  - ![merge fixed](image/report2part2.6.1.png)
+  - ![merge fixed](Image/report2part2.6.1.png)
