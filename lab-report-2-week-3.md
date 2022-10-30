@@ -93,7 +93,7 @@ When we pass the path ".../search?s=app" into the method, the substring "/search
 
 ## Part II
 
-1. ### **avergeWithoutLowest(double[])**
+### **1. avergeWithoutLowest(double[])**
 
 ![average failure-inducing input](Image/report2part2.1.png)
 - 👆 Input that induces the error 
@@ -111,7 +111,7 @@ When we pass the path ".../search?s=app" into the method, the substring "/search
   - ![average fixed](Image/report2part2.3.1.png)
 
 
-2. ### **merge(List\<String\>, List\<String\>)**
+### **2. merge(List\<String\>, List\<String\>)**
 
 ![merge failure-inducing input](Image/report2part2.4.png)
 - 👆 Input that induces the error 
