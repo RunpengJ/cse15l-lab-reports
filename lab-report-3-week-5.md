@@ -5,7 +5,7 @@ We are going to play around with the find command in this lab report.
 ## Introduction to Find 
 Find: The find utility recursively descends the directory tree for each path listed, evaluating an expression (composed of the “primaries” and “operands” listed below) in terms of each file in the tree.
 
-More informaiton about *find* command can be found by typing "man find" in a command line terminal.
+More informaiton about *find* command can be found by using "man find" in a command line terminal.
 ![man find](Image/report3.png)
 
 ## Options
@@ -22,20 +22,20 @@ More informaiton about *find* command can be found by typing "man find" in a com
 
 What happens in the above code block?
 - The above command "find .  -name "Annual_Fee.txt" means walking through the current directory and looking for a file or a directory whose name is "Annual_Fee.txt".
-- This command is useful when we want to look for a particular file.
+- This command is useful when we want to look for a particular file using its name.
 
 #### **Example 2**
 
 ```
-(base) bensonjian@Bensons-Mac technical % find .  -name "An*"   
+(base) bensonjian@Bensons-Mac technical % find . -name "An*"   
 ./government/Media/Anthem_Payout.txt
 ./government/Media/Annual_Fee.txt
 (base) bensonjian@Bensons-Mac technical % 
 ```
 
 What happens in the above code block?
-- The above command "find .  -name "An*"" means walking through the current directory and looking for files or directories whose name starts with "An".
-- This command is useful when we want to look for files or directories but are not sure about the name.
+- The above command "find .  -name "An*"" means walking through the current directory and looking for any file or directory whose name starts with "An".
+- This command is useful when we want to look for any file or directory but are not sure about their name.
 
 #### **Example 3**
 
@@ -58,9 +58,9 @@ What happens in the above code block?
 ```
 
 What happens in the above code block?
-- The above command "find ./government/Media -iname "A*"" means walking through the specified directory and looking for files or directories whose name starts with "A" or "a".
-- The -name option is case sensitive, but the -iname option is not. 
-- This command is useful when we want to look for files or directories but are not sure about the name.
+- The above command "find ./government/Media -iname "A*"" means walking through the specified directory and looking for any file or directory whose name starts with "A" or "a".
+- The -name option is case sensitive, but the -iname option is case insensitive. 
+- This command is useful when we want to look for any file or directory but are not sure about the capitalization of their name.
 
 ### **2. -type**
 
@@ -83,9 +83,8 @@ What happens in the above code block?
 ```
 
 What happens in the above code block?
-- The above command means looking into the current directory, finding all directories and subdirectories and ignoring the files.
-- We can also change "-type d" to "-type f", which means only looking for the file type inside the current directory. 
-- This command is useful when we want to know what subdirectories the current directory has.
+- The above command means looking into the current directory, outputing directories and their subdirectories except the files.
+- This command is useful when we want to know what directories are inside the current directory.
 
 #### **Example 2**
 
@@ -107,7 +106,7 @@ What happens in the above code block?
 ```
 
 What happens in the above code block?
-- The above command means looking into the current directory, and finding files only. 
+- The above command means looking into the current directory, and outputing files only. 
 - This command is useful when we want to know what files the current directory has.
 
 #### **Example 3**
@@ -125,8 +124,8 @@ What happens in the above code block?
 ```
 
 What happens in the above code block?
-- The above command means looking into the specified directory, and outputing the subdirectories only. 
-- This command is useful when we want to know what directories a specified directory has.
+- The above command means looking into the specified directory, and outputing directories only. 
+- This command is useful when we want to know what directories are inside a specified directory.
 
 
 ### **3. -size**
@@ -149,7 +148,7 @@ What happens in the above code block?
 
 What happens in the above code block?
 - The above command means looking into the specified directory, and outputing any subdirectory or file whose size is smaller than 1k.
-- This command is useful when we want to know what directories or files are within a specified of size.
+- This command is useful when we want to know what directories or files are within a specified range of size.
 
 #### **Example 2**
 
@@ -168,7 +167,7 @@ What happens in the above code block?
 
 What happens in the above code block?
 - The above command means looking into the specified directory, and outputing any subdirectory or file whose size is greater than 200k.
-- This command is useful when we want to know what directories or files are within a specified of size.
+- This command is useful when we want to know what directories or files are within a specified range of size.
 
 #### **Example 3**
 
