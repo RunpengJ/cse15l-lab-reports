@@ -10,7 +10,7 @@ More informaiton about *find* command can be found by typing "man find" in a com
 
 ## Options
 
-### 1. -name
+### **1. -name**
 
 #### **Example 1**
 
@@ -62,7 +62,7 @@ What happens in the above code block?
 - The -name option is case sensitive, but the -iname option is not. 
 - This command is useful when we want to look for files or directories but are not sure about the name.
 
-### 2. -type
+### **2. -type**
 
 #### **Example 1**
 
@@ -91,8 +91,7 @@ What happens in the above code block?
 
 ```
 (base) bensonjian@Bensons-Mac technical % find . -type f
-
-... (many many files)
+... (many many files not showing)
 ./911report/chapter-2.txt
 ./911report/chapter-1.txt
 ./911report/chapter-5.txt
@@ -129,15 +128,66 @@ What happens in the above code block?
 - The above command means looking into the specified directory, and outputing the subdirectories only. 
 - This command is useful when we want to know what directories a specified directory has.
 
-### 3. -size
+
+### **3. -size**
 
 #### **Example 1**
 
+```
+(base) bensonjian@Bensons-Mac technical % find . -size -1k
+.
+./government
+./government/About_LSC
+./government/Env_Prot_Agen
+./government/Alcohol_Problems
+./government/Post_Rate_Comm
+./plos/pmed.0020191.txt
+./plos/pmed.0020226.txt
+./911report
+(base) bensonjian@Bensons-Mac technical % 
+```
 
+What happens in the above code block?
+- The above command means looking into the specified directory, and outputing any subdirectory or file whose size is smaller than 1k.
+- This command is useful when we want to know what directories or files are within a specified of size.
 
+#### **Example 2**
 
+```
+(base) bensonjian@Bensons-Mac technical % find . -size +200k  
+./government/About_LSC/commission_report.txt
+./government/Env_Prot_Agen/bill.txt
+./government/Gen_Account_Office/GovernmentAuditingStandards_yb2002ed.txt
+./government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
+./government/Gen_Account_Office/d01591sp.txt
+./911report/chapter-13.4.txt
+./911report/chapter-13.5.txt
+./911report/chapter-3.txt
+(base) bensonjian@Bensons-Mac technical % 
+```
 
-each option with 3 examples
+What happens in the above code block?
+- The above command means looking into the specified directory, and outputing any subdirectory or file whose size is greater than 200k.
+- This command is useful when we want to know what directories or files are within a specified of size.
 
+#### **Example 3**
 
-Show each example as a code block that shows the command and its output, and write a sentence or two about what it’s doing and why it’s useful.
+```
+(base) bensonjian@Bensons-Mac technical % find . -size -1M
+... (many many files not showing)
+./911report/chapter-2.txt
+./911report/chapter-1.txt
+./911report/chapter-5.txt
+./911report/chapter-6.txt
+./911report/chapter-7.txt
+./911report/chapter-9.txt
+./911report/chapter-8.txt
+./911report/preface.txt
+./911report/chapter-12.txt
+./911report/chapter-10.txt
+./911report/chapter-11.txt
+```
+
+What happens in the above code block?
+- The above command means looking into the specified directory, and outputing any subdirectory or file whose size is smaller than 1M.
+- This command is useful when we want to know what directories or files are within a specified range of size.
