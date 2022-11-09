@@ -33,7 +33,6 @@ Task Description:
 
     - scp TestDocSearch.java cs15lfa22jo@ieng6.ucsd.edu:~/
     - ssh cs15lfa22jo@ieng6.ucsd.edu
-    - WaTaTaPuNeKuC8HiHaSi[aMaFoNoYe
     - git clone https://github.com/ucsd-cse15l-f22/skill-demo1 de1
     - mv TestDocSearch.java de1/
     - cd de1
