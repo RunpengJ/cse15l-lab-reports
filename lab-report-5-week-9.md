@@ -2,7 +2,7 @@
 
 ## Grade Script
 
-```
+```bash
 # Create your grading script here
 CPATH=".:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar"
 set -e
